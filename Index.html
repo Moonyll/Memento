@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memento</title>
+</head>
+<body>
+    <p id="Title">Memento</p>
+    <h1 id="TT">1. Les Variables :</h1>
+    <ul id="IM">
+        <li>Pour déclarer une variable entière a : int a = valeur.</li>
+        <li>Pour afficher la variable a : Utiliser Console.WriteLine(a).</li>
+        <li>Pour enregistrer une variable renseignée dans la console : var = Console.ReadLine().</li>
+        <li>Pour mettre la console en attente : Utiliser Console.ReadKey().</li>
+        <li>Pour réinitialiser la fenêtre console : Utiliser Console.Clear().</li>
+        <li>Pour changer la couleur du texte : Utiliser Console.ForegroundColor = Console.Color.Blue,...,Red.</li>
+        <li>Pour changer la couleur du fond : Utiliser Console.BackgroundColor = Console.Color.Blue,...,Red.</li>
+        <li>Pour changer la postion du texte : Utiliser Console.SetCursorPosition(n,k) = Marge de n (gauche) , Marge de k (haut).</li>
+        <li>Pour afficher la date d'aujourd'hui en version courte : DateTime.UtcNow.Date .ToShortDateString(). </li>
+        <li>Opérations sur des variables numériques : Utiliser les opérateurs +, -, *, /.</li>
+        <li>Opérations mathématiques : Utiliser Math.XXX(). Ex : Math.Pow(a,n) pour avoir la puissance n de a.</li>
+        <li>Pour incrémenter / décrémenter une variable numérique : Utiliser ++ ou --.</li>
+        <li>Pour concatener des éléments : Utiliser le symbole $.</li>
+        <li>Pour convertir une chaine de caratctère : Utiliser int.Parse().</li>
+        <li>
+            <div id="TB">Rappel des différents types de variables :</div>
+            <ul id="TBP">
+                <li>byte = Entier de 0 à 255.</li>
+                <li>short = Entier de -32768 à 32767.</li>
+                <li>int = Entier de -2147483648 à 2147483647.</li>
+                <li>long = Entier de -9223372036854775808 à 9223372036854775807.</li>
+                <li>float = Nombre simple précision de -3,402823e38 à 3,402823e38.</li>
+                <li>double = Nombre double précision de -1,79769313486232e308 à 1,79769313486232e308.</li>
+                <li>decimal = Nombre décimal convenant particulièrement aux calculs financiers.</li>
+                <li>char = Représente un caractère.</li>
+                <li>string = Une chaine de caractère.</li>
+                <li>bool = Une valeur booléenne (vrai ou faux).</li>
+            </ul>
+    </ul>
+    <h1 id="TT">2. Les Tableaux - Les Listes :</h1>
+    <ul id="IM">
+        <li>Pour déclarer un tableau d'entiers : int[] = new int []{n1,...,ni}.</li>
+        <li>Pour déclarer un tableau de chaines de caractères : string [] = new string []{"srting 1",...,"string i"}.</li>
+        <li>Attention ! L'indice i diffère de valeur.  Valeur = tableau[indice i].
+        <li>La longueur d'un tableau est : tableau.Length.</li>
+        <li>Pour déclarer une liste d'entiers : liste <'int> = new list<'int>().</li>
+        <li>Pour déclarer une liste de chaine de caractère : liste <'string> = new list<'string>().</li>
+        <li>Pour ajouter des éléments : liste.Add(Elément 1)...liste.Add(Elément n).</li>
+        <li>Pour insérer des éléments : liste.Insert(Indice i,Elément i)...liste.Insert(Indice n,Elément n).</li>
+        <li>Pour créer une énumération : Dans la partie Class avant Static Void : enum name {enum 1,...,enum n}.</li>
+        <li>Pour afficher les indices i d'une énumération : Enum.GetValues(typeof(name)).</li>
+        <li>Pour afficher les valeurs d'une énumération : Méthode N°1 ---> Enum.GetNames(typeof(name)) [GetName aussi].</li>
+        <li>Pour afficher les valeurs d'une énumération : Méthode N°2 ---> name el 1 = name.enum 1.</li>
+        <li>Exemple a. : Console.WriteLine(Enum.GetName(typeof(name),indice i) = affiche valeur de l'indice i.</li>
+        <li>Exemple b. : Console.WriteLine(Enum.GetNames(typeof(name).GetValue(indice i))) = affiche valeur de l'indice i.</li>
+    </ul>
+    <h1 id="TT">3. Les Conditions</h1>
+    <ul id="IM">
+        <li>If{} , Else{} & Else If{}.</li>
+        <li>If{Condition True} & Else{Condtion False}.</li>
+        <li>
+            <div id="TB">Les différents opérateurs et compléments sur les opérations :</div>
+            <ul id="TBP">
+                <li>== Egal.</li>
+                <li><= Inférieur ou Egal.</li>
+                <li>< Strictement Inférieur.</li>
+                <li>>= Supérieur ou Egal.</li>
+                <li>> Strictement Supérieur.</li>
+                <li>&& Et.</li>
+                <li>|| Ou (il existe aussi ^).</li>
+                <li>! Non Egal (Not).</li>
+                <li>% Reste d'une division.</li>
+                <li>i += k équivaut à : i = i + k et i++ (pour k=1).</li>
+                <li>i -= k équivaut à : i = i - k et i-- (pour k=1).</li>
+                <li>i *= k équivaut à : i = i * k.</li>
+                <li>i /= k équivaut à : i = i / k.</li>
+                <li>i %= k équivaut à : i = i % k.</li>
+            </ul>
+        <li> La fonction "Switch" permet d'alléger le codage au bout de 3 conditions :</li>
+        <li> switch(variable) {case(variable i) : condition i; break;... case(variable n) : contition n; break; default : default condition; break;}</li>
+    </ul>
+    <h1 id="TT">4. Les Boucles</h1>
+    <ul id="IM">
+        <li> Boucle While : int i = 0; while(condition) {action; i+=k;}.</li>
+        <li> Boucle Do While : int i = 0; do {action; i+=k;} while(condition).</li>
+        <li> Boucle For : (initialisation (nombre = k); condition (nombre < n); incrémentation (nombre++)) {action;}.</li>
+        <li> Boucle Foreach : foreach (var name in tab){action;}.</li>
+        <li> .Take(n) permet par exemple de récupérer les n premiers éléments d'un tableau tab[] : foreach (int number in tab.Take(n)) {action;}</li>
+    </ul>
+</body>
+</html>

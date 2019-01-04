@@ -1,0 +1,5 @@
+﻿#TT {font-weight:bold;font-style:italic;color:blue;text-decoration:underline;}
+#IM {font:15px Times new roman ;line-height:25px;word-spacing:2px; border-width:1px; border-style:solid; border-color:blue;list-style-type:square;background-color:aliceblue;}
+#TB {font-weight: bold;font-style: italic;color:green;text-decoration:underline;}
+#TBP {list-style: disc;color:navy;font-style:italic;}
+#Title {font:40px Times new roman;font-weight:bold;font-style:italic;text-align:center;text-decoration:underline;}
